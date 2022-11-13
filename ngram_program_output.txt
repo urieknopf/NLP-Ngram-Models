@@ -1,0 +1,139 @@
+Unigram Language Model:
+<s>             100 0.1100
+put             65  0.0715
+the             202 0.2222
+cone            29  0.0319
+on              102 0.1122
+red             58  0.0638
+square          51  0.0561
+</s>            100 0.1100
+take            35  0.0385
+block           47  0.0517
+blue            28  0.0308
+green           17  0.0187
+circle          51  0.0561
+cube            24  0.0264
+
+Unigram laplace Language Model:
+<s>             100 0.1094
+put             65  0.0715
+the             202 0.2199
+cone            29  0.0325
+on              102 0.1116
+red             58  0.0639
+square          51  0.0563
+</s>            100 0.1094
+take            35  0.0390
+block           47  0.0520
+blue            28  0.0314
+green           17  0.0195
+circle          51  0.0563
+cube            24  0.0271
+
+Bigram Language Model:
+[<s>, put]      65  0.6500
+[put, the]      65  1.0000
+[the, cone]     13  0.0644
+[cone, on]      24  0.8276
+[on, the]       102 1.0000
+[the, red]      58  0.2871
+[red, square]   17  0.2931
+[square, on]    12  0.2353
+[the, square]   26  0.1287
+[square, </s>]  39  0.7647
+[<s>, take]     35  0.3500
+[take, the]     35  1.0000
+[the, block]    22  0.1089
+[block, </s>]   17  0.3617
+[red, cone]     7   0.1207
+[block, on]     30  0.6383
+[the, blue]     28  0.1386
+[blue, square]  6   0.2143
+[the, green]    17  0.0842
+[green, cone]   2   0.1176
+[blue, circle]  5   0.1786
+[circle, </s>]  36  0.7059
+[blue, block]   6   0.2143
+[red, block]    12  0.2069
+[green, circle] 5   0.2941
+[circle, on]    15  0.2941
+[green, cube]   1   0.0588
+[cube, on]      21  0.8750
+[red, circle]   19  0.3276
+[blue, cube]    4   0.1429
+[the, circle]   22  0.1089
+[the, cube]     16  0.0792
+[cube, </s>]    3   0.1250
+[green, block]  7   0.4118
+[red, cube]     3   0.0517
+[cone, </s>]    5   0.1724
+[blue, cone]    7   0.2500
+[green, square] 2   0.1176
+
+Bigram laplace Language Model:
+[<s>, put]      65  0.5789
+[put, the]      65  0.8354
+[the, cone]     13  0.0648
+[cone, on]      24  0.5814
+[on, the]       102 0.8879
+[the, red]      58  0.2731
+[red, square]   17  0.2500
+[square, on]    12  0.2000
+[the, square]   26  0.1250
+[square, </s>]  39  0.6154
+[<s>, take]     35  0.3158
+[take, the]     35  0.7347
+[the, block]    22  0.1065
+[block, </s>]   17  0.2951
+[red, cone]     7   0.1111
+[block, on]     30  0.5082
+[the, blue]     28  0.1343
+[blue, square]  6   0.1667
+[the, green]    17  0.0833
+[green, cone]   2   0.0968
+[blue, circle]  5   0.1429
+[circle, </s>]  36  0.5692
+[blue, block]   6   0.1667
+[red, block]    12  0.1806
+[green, circle] 5   0.1935
+[circle, on]    15  0.2462
+[green, cube]   1   0.0645
+[cube, on]      21  0.5789
+[red, circle]   19  0.2778
+[blue, cube]    4   0.1190
+[the, circle]   22  0.1065
+[the, cube]     16  0.0787
+[cube, </s>]    3   0.1053
+[green, block]  7   0.2581
+[red, cube]     3   0.0556
+[cone, </s>]    5   0.1395
+[blue, cone]    7   0.1905
+[green, square] 2   0.0968
+
+Sent. label    Unigram   UnigramL  Bigram    BigramL
+Sentence1      -9.8536   -9.8415   -3.3715   -3.9899   
+Sentence2      -11.9059  -11.9220  -4.0173   -4.6315   
+
+Random sentences from unigram language model with laplace smoothing:
+1:  <s> blue the block blue </s> 
+2:  <s> green circle put green </s>
+3:  <s> green take </s> 
+4:  <s> </s> 
+5:  <s> block </s>
+6:  <s> </s> 
+7:  <s> </s> 
+8:  <s> put red on on on on green take </s>
+9:  <s> red put circle on take put </s>
+10: <s> </s>
+
+Random sentences from bigram language model with laplace smoothing:
+1:  <s> green block on the red circle </s> 
+2:  <s> green block on the red circle </s> </s>
+3:  <s> take the red circle </s> 
+4:  <s> put the red circle </s>
+5:  <s> </s> 
+6:  <s> </s> 
+7:  <s> put the </s>
+8:  <s> take the red circle </s> 
+9:  <s> </s> 
+10: <s> square </s> 
